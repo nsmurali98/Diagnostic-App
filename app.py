@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("Medical Diagnostic Web App ⚕️")
 st.subheader("Does the patient have Diabetics?")
-df = pd.read_csv(r"I:\1 murali\great learning\8 ML Deployment\Day 1\mlop_blr\diabetes.csv")
+df = pd.read_csv("diabetes.csv")
 if st.sidebar.checkbox("View Data",False):
     st.write(df)
 if st.sidebar.checkbox("View Distribution",False):
